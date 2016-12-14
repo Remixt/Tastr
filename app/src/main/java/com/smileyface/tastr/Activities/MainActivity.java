@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Activities;
+package com.smileyface.Tastr.Activities;
 
 
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.smileyface.tastr.R;
+import com.smileyface.Tastr.R;
 
 public class MainActivity extends AppCompatActivity {
 

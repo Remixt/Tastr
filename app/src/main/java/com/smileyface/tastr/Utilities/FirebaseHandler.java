@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Utilities;
+package com.smileyface.Tastr.Utilities;
 
 import android.util.Log;
 
@@ -8,7 +8,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.smileyface.tastr.Other.TastrItem;
+import com.smileyface.Tastr.Other.TastrItem;
 
 import org.json.simple.JSONObject;
 

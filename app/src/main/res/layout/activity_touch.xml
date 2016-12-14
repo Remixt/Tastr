@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_touch"
     android:layout_height="match_parent"
-    tools:context="com.smileyface.tastr.Activities.TouchActivity"
+    tools:context="com.smileyface.Tastr.Activities.TouchActivity"
     android:orientation="vertical"
     android:layout_width="wrap_content"
     app:layout_behavior="@string/action_settings"

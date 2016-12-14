@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Yelp;
+package com.smileyface.Tastr.Yelp;
 
 
 import android.util.Log;

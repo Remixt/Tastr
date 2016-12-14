@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'Google Inc.:Google APIs:23'
-    buildToolsVersion '25.0.1'
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
     defaultConfig {
-        applicationId "com.smileyface.tastr"
-        minSdkVersion 16
+        applicationId "com.smileyface.com.Remixt.Tastr"
+        minSdkVersion 23
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -23,6 +23,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
     return void;
+    productFlavors {
+    }
 }
 
 dependencies {

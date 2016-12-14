@@ -1,11 +1,11 @@
-package com.smileyface.tastr.Utilities;
+package com.smileyface.Tastr.Utilities;
 
 import android.os.AsyncTask;
 import android.os.Process;
 
-import com.smileyface.tastr.Other.MenuItem;
-import com.smileyface.tastr.Other.TastrItem;
-import com.smileyface.tastr.Yelp.YelpAPI;
+import com.smileyface.Tastr.Other.MenuItem;
+import com.smileyface.Tastr.Other.TastrItem;
+import com.smileyface.Tastr.Yelp.YelpAPI;
 
 import java.util.ArrayList;
 

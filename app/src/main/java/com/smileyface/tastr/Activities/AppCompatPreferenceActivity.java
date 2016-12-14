@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Activities;
+package com.smileyface.Tastr.Activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

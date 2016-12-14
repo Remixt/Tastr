@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Utilities;
+package com.smileyface.Tastr.Utilities;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

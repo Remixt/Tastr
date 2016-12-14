@@ -1,9 +1,9 @@
-package com.smileyface.tastr.Activities;
+package com.smileyface.Tastr.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.smileyface.tastr.R;
+import com.smileyface.Tastr.R;
 
 /**
  * Created by Remixt on 12/7/2016.

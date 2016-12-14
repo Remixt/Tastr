@@ -1,9 +1,9 @@
-package com.smileyface.tastr.Utilities;
+package com.smileyface.Tastr.Utilities;
 
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.smileyface.tastr.Other.TastrItem;
+import com.smileyface.Tastr.Other.TastrItem;
 
 import java.util.ArrayList;
 

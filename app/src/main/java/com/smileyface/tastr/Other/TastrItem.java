@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Other;
+package com.smileyface.Tastr.Other;
 
 import android.util.Log;
 

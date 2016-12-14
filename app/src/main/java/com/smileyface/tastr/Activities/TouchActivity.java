@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Activities;
+package com.smileyface.Tastr.Activities;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -20,12 +20,12 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.smileyface.tastr.Other.TastrItem;
-import com.smileyface.tastr.R;
-import com.smileyface.tastr.Utilities.CallHandler;
-import com.smileyface.tastr.Utilities.ItemLoader;
-import com.smileyface.tastr.Utilities.LocationHandler;
-import com.smileyface.tastr.Utilities.YelpDataExecutor;
+import com.smileyface.Tastr.Other.TastrItem;
+import com.smileyface.Tastr.R;
+import com.smileyface.Tastr.Utilities.CallHandler;
+import com.smileyface.Tastr.Utilities.ItemLoader;
+import com.smileyface.Tastr.Utilities.LocationHandler;
+import com.smileyface.Tastr.Utilities.YelpDataExecutor;
 import com.squareup.picasso.Picasso;
 
 import static java.lang.Thread.sleep;
@@ -101,7 +101,7 @@ public class TouchActivity extends Activity {
                         if (dropEventNotHandled(event)) {
                             v.setVisibility(View.VISIBLE);
                         }
-                        CharSequence options[] = new CharSequence[]{currentItem.getMenu().get(itemCounter - 1).getName(), currentItem.getAddress(), currentItem.getPhone(), currentItem.getRating()};
+                        CharSequence options[] = new CharSequence[]{"Menu Item: " + currentItem.getMenu().get(itemCounter - 1).getName(), "Address: "+ currentItem.getAddress(), "Phone: " + currentItem.getPhone(), "Rating: "+ currentItem.getRating()};
 
                         // create a google maps buffer in case the user wants to go to the restaurant found.
                         final Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW,
@@ -113,7 +113,7 @@ public class TouchActivity extends Activity {
                         webIntent.setData(Uri.parse("http://www.google.com/#q=" + currentItem.getName() + "," + currentItem.getCity()));
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(TouchActivity.this);
-                        builder.setTitle(currentItem.getName());
+                        builder.setTitle("Restaurant: " + currentItem.getName());
                         builder.setItems(options, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

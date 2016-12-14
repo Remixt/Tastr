@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.smileyface.tastr.Yelp.YelpActivity">
+    tools:context="com.smileyface.Tastr.Yelp.YelpActivity">
 
     <Button
         android:text="Try Yelp"

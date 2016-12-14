@@ -1,4 +1,4 @@
-package com.smileyface.tastr.Yelp;
+package com.smileyface.Tastr.Yelp;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -21,7 +21,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.smileyface.tastr.R;
+import com.smileyface.Tastr.R;
 
 import java.util.ArrayList;
 
