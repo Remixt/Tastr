@@ -1,0 +1,45 @@
+import java.awt.BorderLayout;
+import java.awt.Image;
+import java.net.MalformedURLException;
+import java.net.URL;
+import javax.swing.*;
+import javax.imageio.ImageIO;
+
+
+public class getImage{
+	
+	//variables required for switching out images.
+	static Image image = null;
+	static URL newUrl = null;
+	
+	public static void main(String[] args) throws Exception {
+		
+		setURL("http://weknowyourdreams.com/images/pasta/pasta-01.jpg");
+		image = ImageIO.read(getUrl());
+		System.out.println(getUrl());
+		buildGUI();
+		
+	
+		
+                          
+	}
+	
+	public static void setURL(String myUrl) throws MalformedURLException{
+		newUrl = new URL(myUrl);
+		
+	}
+	
+	public static URL getUrl(){
+		return newUrl;
+	}
+	
+	public static void buildGUI(){
+		JFrame frame = new JFrame();
+		JLabel lblimage = new JLabel(new ImageIcon(image));
+		frame.getContentPane().add(lblimage, BorderLayout.CENTER);
+		frame.setSize(800, 400);
+		frame.setVisible(true);
+		
+	}
+	
+}

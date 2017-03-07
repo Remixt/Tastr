@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_touch"
+    android:layout_height="match_parent"
+    tools:context="com.tastr.Activities.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    app:layout_behavior="@string/action_settings"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/settingsIcon"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:srcCompat="@drawable/yuck"
+            android:id="@+id/yuck"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:src="@drawable/yuck"
+            android:layout_height="71dp"
+            android:layout_below="@+id/settingsIcon"
+            android:adjustViewBounds="false"
+            android:scrollbarSize="0dp"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarDefaultDelayBeforeFade="0" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/settings"
+        android:id="@+id/settingsIcon"
+        android:src="@drawable/settings"
+        android:elevation="0dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/yum"
+            android:id="@+id/yum"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:visibility="visible"
+            android:src="@drawable/yum"
+            android:layout_height="71dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.62"
+        android:id="@+id/frame"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/img"
+            android:layout_weight="0.62"
+            android:layout_gravity="fill_vertical|fill_horizontal" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadingSpinner"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDuration="@integer/google_play_services_version"
+            android:keepScreenOn="true"
+            android:maxHeight="25dp"
+            android:maxWidth="25dp"
+            android:minHeight="25dp"
+            android:minWidth="25dp" />
+    </FrameLayout>
+
+</RelativeLayout>
